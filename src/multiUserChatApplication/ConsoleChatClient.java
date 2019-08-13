@@ -94,19 +94,20 @@ public class ConsoleChatClient
 
 	public static void main(String[] args)
 	{
-//		if(args.length != 1)
-//			throw new IllegalArgumentException();
+		if(args.length != 1)
+			throw new IllegalArgumentException();
 		
 		// start a client connection to a host arg
 		try
 		{
-			clientSocket = new Socket("localhost", 59002);
+			clientSocket = new Socket(args[0], 59002);
 			
 		} catch (Exception e)
 		{
 			e.printStackTrace();
 		}
 		
+		// start the communication threads
 		new Thread(new Writer()).start();
 		new Thread(new Listener()).start();
 
