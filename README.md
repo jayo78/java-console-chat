@@ -1,5 +1,5 @@
 # java-console-chat
-simple chat app to learn java networking with sockets
+simple chat app using tcp sockets
 
 ## Details
 - Create a handle and chat with other connected clients continuously 
