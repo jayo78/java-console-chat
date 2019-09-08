@@ -17,8 +17,7 @@ public class ConsoleChatClient
 {
 	// Listener class:
 	// implements the run method from Runnable to enable thread creation for the
-	// listening
-	// portion of a server to client communication
+	// listening portion of a server to client communication
 
 	private static class Listener implements Runnable
 	{
@@ -53,8 +52,7 @@ public class ConsoleChatClient
 
 	// Writer class:
 	// implements the run method from Runnable to enable thread creation for the
-	// writing
-	// portion of a server to client communication
+	// writing portion of a server to client communication
 
 	private static class Writer implements Runnable
 	{
